@@ -3,85 +3,297 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autobrain Protocol | Decentralized AI on Solana</title>
+    <title>Autobrain Protocol | AI x Blockchain on Solana</title>
     
-    <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Meta Tags for Modern SEO -->
+    <meta name="description" content="Autobrain Protocol - Decentralized AI on Solana Blockchain. $ABP token, 10B supply, 45% community allocation.">
+    <meta name="keywords" content="AI, Solana, Blockchain, Cryptocurrency, $ABP, Decentralized AI, Token, Airdrop">
+    <meta property="og:title" content="Autobrain Protocol">
+    <meta property="og:description" content="Revolutionizing AI with Blockchain Technology">
+    <meta property="og:image" content="https://i.imgur.com/YOUR_IMAGE.png">
+    <meta property="og:url" content="https://mdmethu082-alt.github.io/Autobrain-protocol3/">
+    <meta name="twitter:card" content="summary_large_image">
     
-    <!-- Font Awesome -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- AOS Animation -->
+    <!-- CSS Libraries -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/000000/brain.png">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="https://img.icons8.com/color/48/000000/brain.png" alt="Logo" class="logo-img">
-                <span class="brand-text">AUTOBRAIN PROTOCOL</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#tokenomics">Tokenomics</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#partners">Partners</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#roadmap">Roadmap</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#airdrop">Airdrop</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Community</a></li>
-                </ul>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="ri-sun-line sun-icon"></i>
+        <i class="ri-moon-line moon-icon"></i>
+    </button>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="brain-loader">
+                <div class="brain-lobe left"></div>
+                <div class="brain-lobe right"></div>
+                <div class="brain-stem"></div>
             </div>
+            <p class="preloader-text">Initializing Autobrain Protocol...</p>
+        </div>
+    </div>
+
+    <!-- Cursor Effect -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-nav">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="ri-brain-fill"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-primary">AUTOBRAIN</span>
+                    <span class="logo-secondary">PROTOCOL</span>
+                </div>
+            </div>
+
+            <!-- Menu -->
+            <div class="nav-menu">
+                <a href="#hero" class="nav-link active">
+                    <i class="ri-home-5-line"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <i class="ri-information-line"></i>
+                    <span>About</span>
+                </a>
+                <a href="#tokenomics" class="nav-link">
+                    <i class="ri-coins-line"></i>
+                    <span>Tokenomics</span>
+                </a>
+                <a href="#features" class="nav-link">
+                    <i class="ri-flashlight-line"></i>
+                    <span>Features</span>
+                </a>
+                <a href="#airdrop" class="nav-link airdrop-badge">
+                    <i class="ri-gift-line"></i>
+                    <span>Airdrop</span>
+                    <span class="live-badge">LIVE</span>
+                </a>
+            </div>
+
+            <!-- CTA Button -->
+            <button class="nav-cta">
+                <i class="ri-wallet-3-line"></i>
+                <span>Connect Wallet</span>
+            </button>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" id="mobileToggle">
+                <i class="ri-menu-3-line"></i>
+            </button>
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="ri-brain-fill"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-primary">AUTOBRAIN</span>
+                    <span class="logo-secondary">PROTOCOL</span>
+                </div>
+            </div>
+            <button class="mobile-close" id="mobileClose">
+                <i class="ri-close-line"></i>
+            </button>
+        </div>
+        <div class="mobile-menu-links">
+            <a href="#hero" class="mobile-link active">
+                <i class="ri-home-5-line"></i>
+                <span>Home</span>
+            </a>
+            <a href="#about" class="mobile-link">
+                <i class="ri-information-line"></i>
+                <span>About</span>
+            </a>
+            <a href="#tokenomics" class="mobile-link">
+                <i class="ri-coins-line"></i>
+                <span>Tokenomics</span>
+            </a>
+            <a href="#features" class="mobile-link">
+                <i class="ri-flashlight-line"></i>
+                <span>Features</span>
+            </a>
+            <a href="#airdrop" class="mobile-link">
+                <i class="ri-gift-line"></i>
+                <span>Airdrop</span>
+                <span class="live-badge">LIVE</span>
+            </a>
+        </div>
+        <button class="mobile-cta">
+            <i class="ri-wallet-3-line"></i>
+            <span>Connect Wallet</span>
+        </button>
+    </div>
+
     <!-- Hero Section -->
-    <section id="home" class="hero-section">
+    <section id="hero" class="hero-section">
+        <!-- Animated Background -->
+        <div class="hero-bg">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+            <div class="gradient-overlay"></div>
+        </div>
+
+        <!-- Hero Content -->
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <h1 class="hero-title">DECENTRALIZED AI ON <span class="solana-text">SOLANA</span></h1>
-                    <p class="hero-subtitle">Revolutionizing Artificial Intelligence with Blockchain Technology</p>
-                    <div class="token-info">
-                        <div class="token-badge">
-                            <i class="fas fa-coins"></i>
-                            <span>Token: <strong>$ABP</strong></span>
+            <div class="hero-grid">
+                <!-- Left Column -->
+                <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+                    <div class="badge-container">
+                        <span class="badge gradient-badge">
+                            <i class="ri-flashlight-fill"></i>
+                            POWERED BY SOLANA
+                        </span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="title-line">Decentralized</span>
+                        <span class="title-line highlight-text">AI Intelligence</span>
+                        <span class="title-line">On Blockchain</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        Autobrain Protocol revolutionizes artificial intelligence with Solana's high-speed blockchain. 
+                        Experience the future of decentralized AI computation.
+                    </p>
+                    
+                    <!-- Stats -->
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="ri-coin-line"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h4 class="stat-value">$ABP</h4>
+                                <p class="stat-label">Token Symbol</p>
+                            </div>
                         </div>
-                        <div class="token-badge">
-                            <i class="fas fa-link"></i>
-                            <span>Blockchain: <strong>Solana</strong></span>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="ri-stack-line"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h4 class="stat-value">10B</h4>
+                                <p class="stat-label">Total Supply</p>
+                            </div>
                         </div>
-                        <div class="token-badge">
-                            <i class="fas fa-chart-pie"></i>
-                            <span>Total Supply: <strong>10B</strong></span>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="ri-user-line"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h4 class="stat-value">45%</h4>
+                                <p class="stat-label">Community</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="hero-buttons mt-4">
-                        <a href="#airdrop" class="btn btn-primary btn-lg me-3">
-                            <i class="fas fa-gift"></i> CLAIM AIRDROP
-                        </a>
-                        <a href="https://solana.com" target="_blank" class="btn btn-outline-light btn-lg">
-                            <i class="fas fa-rocket"></i> BUY ON SOLANA
-                        </a>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="hero-actions">
+                        <button class="btn-primary btn-lg btn-glow">
+                            <i class="ri-rocket-line"></i>
+                            <span>Buy $ABP</span>
+                        </button>
+                        <button class="btn-outline btn-lg">
+                            <i class="ri-file-list-3-line"></i>
+                            <span>Whitepaper</span>
+                        </button>
+                        <button class="btn-ghost btn-lg airdrop-btn">
+                            <i class="ri-gift-line"></i>
+                            <span>Claim Airdrop</span>
+                            <span class="pulse-dot"></span>
+                        </button>
                     </div>
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="ai-brain">
-                        <img src="https://img.icons8.com/color/300/000000/brain.png" alt="AI Brain" class="img-fluid">
-                        <div class="pulse-ring"></div>
+
+                <!-- Right Column - 3D Brain -->
+                <div class="hero-visual" data-aos="fade-left" data-aos-delay="400">
+                    <div class="brain-container">
+                        <div class="brain-3d">
+                            <div class="brain-main">
+                                <div class="brain-part part-1"></div>
+                                <div class="brain-part part-2"></div>
+                                <div class="brain-part part-3"></div>
+                                <div class="brain-part part-4"></div>
+                            </div>
+                            <div class="brain-glow"></div>
+                        </div>
+                        
+                        <!-- Floating Elements -->
+                        <div class="floating-element el-1">
+                            <i class="ri-shield-check-line"></i>
+                            <span>Secure</span>
+                        </div>
+                        <div class="floating-element el-2">
+                            <i class="ri-zap-line"></i>
+                            <span>Fast</span>
+                        </div>
+                        <div class="floating-element el-3">
+                            <i class="ri-line-chart-line"></i>
+                            <span>Scalable</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Partners Scroll -->
+            <div class="partners-scroll" data-aos="fade-up" data-aos-delay="600">
+                <div class="scroll-track">
+                    <div class="scroll-item">
+                        <div class="partner-logo solana-logo">
+                            <i class="ri-solana-fill"></i>
+                            <span>Solana</span>
+                        </div>
+                    </div>
+                    <div class="scroll-item">
+                        <div class="partner-logo bnb-logo">
+                            <i class="ri-currency-fill"></i>
+                            <span>Binance</span>
+                        </div>
+                    </div>
+                    <div class="scroll-item">
+                        <div class="partner-logo partner-3">
+                            <i class="ri-artificial-intelligence-fill"></i>
+                            <span>OpenAI</span>
+                        </div>
+                    </div>
+                    <div class="scroll-item">
+                        <div class="partner-logo partner-4">
+                            <i class="ri-cloud-line"></i>
+                            <span>Cloudflare</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -89,20 +301,88 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section-dark">
+    <section id="about" class="section about-section">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">ABOUT AUTOBRAIN PROTOCOL</h2>
-            <div class="row">
-                <div class="col-md-6" data-aos="fade-right">
-                    <div class="about-card">
-                        <h3><i class="fas fa-brain"></i> AI-Powered Blockchain</h3>
-                        <p>Autobrain Protocol combines advanced artificial intelligence with Solana's high-speed blockchain to create a decentralized AI ecosystem.</p>
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="title-number">01</span>
+                    About Protocol
+                </h2>
+                <p class="section-subtitle">
+                    Revolutionizing AI with blockchain technology
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <!-- About Card 1 -->
+                <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="about-card-header">
+                        <div class="card-icon">
+                            <i class="ri-cpu-line"></i>
+                        </div>
+                        <h3 class="card-title">AI Computation</h3>
+                    </div>
+                    <p class="card-description">
+                        Decentralized AI model training and inference on Solana blockchain. 
+                        Distributed computing power for complex AI tasks.
+                    </p>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="stat-number">50K+</span>
+                            <span class="stat-label">AI Models</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">99.9%</span>
+                            <span class="stat-label">Uptime</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6" data-aos="fade-left">
-                    <div class="about-card">
-                        <h3><i class="fas fa-shield-alt"></i> Secure & Scalable</h3>
-                        <p>Built on Solana for maximum security, scalability, and low transaction costs. Perfect for AI computations and data processing.</p>
+
+                <!-- About Card 2 -->
+                <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="about-card-header">
+                        <div class="card-icon">
+                            <i class="ri-link-m"></i>
+                        </div>
+                        <h3 class="card-title">Blockchain Integration</h3>
+                    </div>
+                    <p class="card-description">
+                        Built on Solana for high-speed, low-cost transactions. 
+                        Smart contracts for transparent AI governance.
+                    </p>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="stat-number">65K</span>
+                            <span class="stat-label">TPS</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">$0.00025</span>
+                            <span class="stat-label">Avg. Fee</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Card 3 -->
+                <div class="about-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="about-card-header">
+                        <div class="card-icon">
+                            <i class="ri-community-line"></i>
+                        </div>
+                        <h3 class="card-title">Community Driven</h3>
+                    </div>
+                    <p class="card-description">
+                        45% token allocation to community. 
+                        DAO governance for protocol upgrades and decisions.
+                    </p>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="stat-number">45%</span>
+                            <span class="stat-label">Community</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10K+</span>
+                            <span class="stat-label">Members</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -110,236 +390,67 @@
     </section>
 
     <!-- Tokenomics Section -->
-    <section id="tokenomics" class="section-light">
+    <section id="tokenomics" class="section tokenomics-section">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">$ABP TOKENOMICS</h2>
-            <div class="row align-items-center">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <div class="token-details">
-                        <div class="detail-item">
-                            <h4><i class="fas fa-tag"></i> Token Name</h4>
-                            <p class="detail-value">$ABP (Autobrain Protocol)</p>
-                        </div>
-                        <div class="detail-item">
-                            <h4><i class="fas fa-link"></i> Blockchain</h4>
-                            <p class="detail-value">Solana Network</p>
-                        </div>
-                        <div class="detail-item">
-                            <h4><i class="fas fa-chart-line"></i> Total Supply</h4>
-                            <p class="detail-value">10,000,000,000 (10 Billion)</p>
-                        </div>
-                        <div class="detail-item">
-                            <h4><i class="fas fa-users"></i> Community Allocation</h4>
-                            <p class="detail-value">45% (4.5 Billion Tokens)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="chart-container">
-                        <canvas id="tokenChart"></canvas>
-                    </div>
-                </div>
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="title-number">02</span>
+                    Tokenomics
+                </h2>
+                <p class="section-subtitle">
+                    $ABP Token Distribution & Economics
+                </p>
             </div>
-        </div>
-    </section>
 
-    <!-- Partners Section -->
-    <section id="partners" class="section-dark">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">STRATEGIC PARTNERS</h2>
-            <div class="partners-grid">
-                <div class="partner-card" data-aos="zoom-in">
-                    <div class="partner-logo solana">
-                        <i class="fab fa-solana"></i>
-                    </div>
-                    <h4>Solana Foundation</h4>
-                    <p>Official blockchain partner for high-speed transactions</p>
-                </div>
-                <div class="partner-card" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="partner-logo bnb">
-                        <i class="fab fa-btc"></i>
-                    </div>
-                    <h4>Binance Ecosystem</h4>
-                    <p>Strategic partnership for exchange listings</p>
-                </div>
-                <div class="partner-card" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="partner-logo ai">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h4>AI Research Labs</h4>
-                    <p>Collaboration for AI model development</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Roadmap Section -->
-    <section id="roadmap" class="section-light">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">FUTURE GROWTH ROADMAP</h2>
-            <div class="timeline">
-                <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-date">Q1 2024</div>
-                    <div class="timeline-content">
-                        <h4>🚀 Launch & Airdrop</h4>
-                        <p>• Token Generation Event<br>• Community Airdrop Distribution<br>• Initial Exchange Listings</p>
-                    </div>
-                </div>
-                <div class="timeline-item" data-aos="fade-left">
-                    <div class="timeline-date">Q2 2024</div>
-                    <div class="timeline-content">
-                        <h4>🤖 AI Model Integration</h4>
-                        <p>• First AI Models on Blockchain<br>• Developer SDK Release<br>• First DApp Launch</p>
-                    </div>
-                </div>
-                <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-date">Q3 2024</div>
-                    <div class="timeline-content">
-                        <h4>📈 Ecosystem Expansion</h4>
-                        <p>• Major Exchange Listings<br>• Partnership Announcements<br>• Mobile App Beta</p>
-                    </div>
-                </div>
-                <div class="timeline-item" data-aos="fade-left">
-                    <div class="timeline-date">Q4 2024</div>
-                    <div class="timeline-content">
-                        <h4>🌐 Global Adoption</h4>
-                        <p>• Full AI Marketplace Launch<br>• Cross-chain Integration<br>• Enterprise Solutions</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Airdrop Section -->
-    <section id="airdrop" class="airdrop-section">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">$ABP AIRDROP SYSTEM</h2>
-            <p class="section-subtitle" data-aos="fade-up">Claim your free $ABP tokens and join the revolution!</p>
-            
-            <div class="airdrop-card" data-aos="zoom-in">
-                <div class="airdrop-header">
-                    <h3><i class="fas fa-gift"></i> AIRDROP REWARDS</h3>
-                    <div class="countdown">
-                        <div class="countdown-item">
-                            <span id="days">05</span>
-                            <small>Days</small>
+            <div class="tokenomics-grid">
+                <!-- Token Stats -->
+                <div class="token-stats" data-aos="fade-right">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="ri-token-swap-line"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h4 class="stat-title">Token Name</h4>
+                                <p class="stat-value">$ABP</p>
+                            </div>
                         </div>
-                        <div class="countdown-item">
-                            <span id="hours">12</span>
-                            <small>Hours</small>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="ri-link"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h4 class="stat-title">Blockchain</h4>
+                                <p class="stat-value">Solana</p>
+                            </div>
                         </div>
-                        <div class="countdown-item">
-                            <span id="minutes">30</span>
-                            <small>Minutes</small>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="ri-stack-line"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h4 class="stat-title">Total Supply</h4>
+                                <p class="stat-value">10,000,000,000</p>
+                            </div>
                         </div>
-                        <div class="countdown-item">
-                            <span id="seconds">45</span>
-                            <small>Seconds</small>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="ri-community-line"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h4 class="stat-title">Community</h4>
+                                <p class="stat-value">4.5B Tokens (45%)</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="airdrop-stats">
-                    <div class="stat">
-                        <h4>Total Airdrop</h4>
-                        <p>500,000,000 $ABP</p>
-                    </div>
-                    <div class="stat">
-                        <h4>Claimed</h4>
-                        <p>125,250,000 $ABP</p>
-                    </div>
-                    <div class="stat">
-                        <h4>Participants</h4>
-                        <p>25,000+</p>
-                    </div>
-                </div>
-                
-                <form class="airdrop-form" id="claimForm">
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Enter your email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Solana Wallet Address" required>
-                    </div>
-                    <div class="form-group">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" required>
-                            <label class="form-check-label">I agree to terms and conditions</label>
+
+                    <!-- Live Price -->
+                    <div class="live-price-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="price-header">
+                            <h4>Live Price</h4>
+                            <span class="price-change positive">+5.2%</span>
                         </div>
-                    </div>
-                    <button type="submit" class="btn btn-success btn-lg w-100">
-                        <i class="fas fa-gift"></i> CLAIM MY AIRDROP TOKENS
-                    </button>
-                </form>
-                
-                <div class="airdrop-note">
-                    <p><i class="fas fa-info-circle"></i> Tokens will be distributed within 24 hours after verification</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact/Community Section -->
-    <section id="contact" class="section-dark">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">JOIN OUR COMMUNITY</h2>
-            <div class="community-links">
-                <a href="https://t.me" target="_blank" class="community-link" data-aos="zoom-in">
-                    <i class="fab fa-telegram"></i>
-                    <span>Telegram</span>
-                </a>
-                <a href="https://twitter.com" target="_blank" class="community-link" data-aos="zoom-in" data-aos-delay="100">
-                    <i class="fab fa-twitter"></i>
-                    <span>Twitter</span>
-                </a>
-                <a href="https://discord.com" target="_blank" class="community-link" data-aos="zoom-in" data-aos-delay="200">
-                    <i class="fab fa-discord"></i>
-                    <span>Discord</span>
-                </a>
-                <a href="https://github.com" target="_blank" class="community-link" data-aos="zoom-in" data-aos-delay="300">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="footer-brand">
-                        <img src="https://img.icons8.com/color/48/000000/brain.png" alt="Logo">
-                        <h3>AUTOBRAIN PROTOCOL</h3>
-                        <p>Decentralized AI on Solana Blockchain</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="footer-links">
-                        <a href="#">Whitepaper</a>
-                        <a href="#">Audit Report</a>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                    </div>
-                    <p class="copyright">© 2024 Autobrain Protocol. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js"></script>
-    
-    <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-    </script>
-</body>
-                    </html>
+                        <div class="price-content">
+                            <h3 class="current-price">$0.0425</h3>
+                            <div class="price-chart">
+                                <canvas id="miniCha
