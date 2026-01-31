@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AutoBrain Protocol</title>
+    <style>
+        body {
+            background: #0a0a0a;
+            color: white;
+            font-family: Arial;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .success {
+            color: #00ff88;
+            font-size: 48px;
+            margin: 20px 0;
+        }
+        .url {
+            background: #222;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 30px auto;
+            max-width: 600px;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <div class="success">✅ AutoBrain Protocol</div>
+    <h1>Decentralized AI on Solana</h1>
+    
+    <div class="url">
+        <strong>GitHub Repository:</strong><br>
+        https://github.com/mdmethu082-alt/Autobrain-protocl3
+    </div>
+    
+    <div class="url">
+        <strong>Live Website URL:</strong><br>
+        https://mdmethu082-alt.github.io/Autobrain-protocl3/
+    </div>
+    
+    <p>GitHub Pages is now active. Your website will be live in 2-3 minutes.</p>
+    
+    <div style="margin-top: 50px; color: #888;">
+        <p>© 2023 AutoBrain Protocol | AI + Blockchain</p>
+    </div>
+</body>
+</html>
