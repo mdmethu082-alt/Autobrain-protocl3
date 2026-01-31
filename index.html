@@ -3,454 +3,676 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autobrain Protocol | AI x Blockchain on Solana</title>
-    
-    <!-- Meta Tags for Modern SEO -->
-    <meta name="description" content="Autobrain Protocol - Decentralized AI on Solana Blockchain. $ABP token, 10B supply, 45% community allocation.">
-    <meta name="keywords" content="AI, Solana, Blockchain, Cryptocurrency, $ABP, Decentralized AI, Token, Airdrop">
-    <meta property="og:title" content="Autobrain Protocol">
-    <meta property="og:description" content="Revolutionizing AI with Blockchain Technology">
-    <meta property="og:image" content="https://i.imgur.com/YOUR_IMAGE.png">
-    <meta property="og:url" content="https://mdmethu082-alt.github.io/Autobrain-protocol3/">
-    <meta name="twitter:card" content="summary_large_image">
+    <title>Autobrain Protocol - Airdrop</title>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
     
-    <!-- CSS Libraries -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #fff;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Background Effects */
+        .bg-particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header/Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .logo-text {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-link {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #fff;
+        }
+
+        .wallet-btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.3s;
+        }
+
+        .wallet-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        /* Profile Card */
+        .profile-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .profile-avatar {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            position: relative;
+        }
+
+        .profile-avatar::after {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 50%;
+            z-index: -1;
+            filter: blur(10px);
+            opacity: 0.5;
+        }
+
+        .profile-info h2 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .profile-info p {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stat-card h3 {
+            font-size: 32px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 5px;
+        }
+
+        .stat-card p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+        }
+
+        /* Progress Bar */
+        .progress-section {
+            margin: 30px 0;
+        }
+
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .progress-bar {
+            height: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 5px;
+            width: 65%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .progress-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(255, 255, 255, 0.3), 
+                transparent);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        /* Tasks Section */
+        .tasks-section {
+            margin-top: 40px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .tasks-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .task-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .task-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .task-info h4 {
+            margin-bottom: 5px;
+        }
+
+        .task-info p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+        }
+
+        .task-reward {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .task-btn {
+            background: rgba(102, 126, 234, 0.2);
+            color: #667eea;
+            border: 1px solid #667eea;
+            padding: 8px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .task-btn:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .task-btn.completed {
+            background: rgba(46, 204, 113, 0.2);
+            color: #2ecc71;
+            border-color: #2ecc71;
+        }
+
+        /* Right Sidebar - Airdrop Info */
+        .sidebar {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+        }
+
+        .airdrop-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .airdrop-header h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .airdrop-timer {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .timer-title {
+            text-align: center;
+            margin-bottom: 15px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .timer-display {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .time-unit {
+            text-align: center;
+        }
+
+        .time-value {
+            font-size: 32px;
+            font-weight: 700;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: block;
+        }
+
+        .time-label {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .total-rewards {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.2), rgba(118, 75, 162, 0.2));
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .total-rewards h3 {
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+
+        .claim-btn {
+            width: 100%;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 16px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.3s;
+            margin-top: 20px;
+        }
+
+        .claim-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .claim-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Referral Section */
+        .referral-section {
+            margin-top: 30px;
+        }
+
+        .referral-input {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .referral-input input {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 12px 15px;
+            color: white;
+        }
+
+        .referral-input button {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 12px 20px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px;
+            color: rgba(255, 255, 255, 0.5);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                position: static;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .profile-header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Theme Toggle -->
-    <button class="theme-toggle" id="themeToggle">
-        <i class="ri-sun-line sun-icon"></i>
-        <i class="ri-moon-line moon-icon"></i>
-    </button>
+    <!-- Background Particles -->
+    <div class="bg-particles" id="particles"></div>
 
-    <!-- Preloader -->
-    <div class="preloader" id="preloader">
-        <div class="preloader-content">
-            <div class="brain-loader">
-                <div class="brain-lobe left"></div>
-                <div class="brain-lobe right"></div>
-                <div class="brain-stem"></div>
-            </div>
-            <p class="preloader-text">Initializing Autobrain Protocol...</p>
-        </div>
-    </div>
-
-    <!-- Cursor Effect -->
-    <div class="cursor-dot" id="cursorDot"></div>
-    <div class="cursor-outline" id="cursorOutline"></div>
-
-    <!-- Navigation -->
-    <nav class="navbar glass-nav">
-        <div class="nav-container">
-            <!-- Logo -->
-            <div class="nav-logo">
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="logo">
                 <div class="logo-icon">
-                    <i class="ri-brain-fill"></i>
+                    <i class="fas fa-brain"></i>
                 </div>
-                <div class="logo-text">
-                    <span class="logo-primary">AUTOBRAIN</span>
-                    <span class="logo-secondary">PROTOCOL</span>
-                </div>
+                <div class="logo-text">Autobrain Protocol</div>
             </div>
-
-            <!-- Menu -->
-            <div class="nav-menu">
-                <a href="#hero" class="nav-link active">
-                    <i class="ri-home-5-line"></i>
-                    <span>Home</span>
-                </a>
-                <a href="#about" class="nav-link">
-                    <i class="ri-information-line"></i>
-                    <span>About</span>
-                </a>
-                <a href="#tokenomics" class="nav-link">
-                    <i class="ri-coins-line"></i>
-                    <span>Tokenomics</span>
-                </a>
-                <a href="#features" class="nav-link">
-                    <i class="ri-flashlight-line"></i>
-                    <span>Features</span>
-                </a>
-                <a href="#airdrop" class="nav-link airdrop-badge">
-                    <i class="ri-gift-line"></i>
-                    <span>Airdrop</span>
-                    <span class="live-badge">LIVE</span>
-                </a>
+            
+            <div class="nav-links">
+                <a href="#" class="nav-link active">Dashboard</a>
+                <a href="#" class="nav-link">Airdrop</a>
+                <a href="#" class="nav-link">Tasks</a>
+                <a href="#" class="nav-link">Leaderboard</a>
+                <a href="#" class="nav-link">Referral</a>
             </div>
-
-            <!-- CTA Button -->
-            <button class="nav-cta">
-                <i class="ri-wallet-3-line"></i>
-                <span>Connect Wallet</span>
+            
+            <button class="wallet-btn">
+                <i class="fas fa-wallet"></i>
+                Connect Wallet
             </button>
+        </nav>
 
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-toggle" id="mobileToggle">
-                <i class="ri-menu-3-line"></i>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
-        <div class="mobile-menu-header">
-            <div class="nav-logo">
-                <div class="logo-icon">
-                    <i class="ri-brain-fill"></i>
-                </div>
-                <div class="logo-text">
-                    <span class="logo-primary">AUTOBRAIN</span>
-                    <span class="logo-secondary">PROTOCOL</span>
-                </div>
-            </div>
-            <button class="mobile-close" id="mobileClose">
-                <i class="ri-close-line"></i>
-            </button>
-        </div>
-        <div class="mobile-menu-links">
-            <a href="#hero" class="mobile-link active">
-                <i class="ri-home-5-line"></i>
-                <span>Home</span>
-            </a>
-            <a href="#about" class="mobile-link">
-                <i class="ri-information-line"></i>
-                <span>About</span>
-            </a>
-            <a href="#tokenomics" class="mobile-link">
-                <i class="ri-coins-line"></i>
-                <span>Tokenomics</span>
-            </a>
-            <a href="#features" class="mobile-link">
-                <i class="ri-flashlight-line"></i>
-                <span>Features</span>
-            </a>
-            <a href="#airdrop" class="mobile-link">
-                <i class="ri-gift-line"></i>
-                <span>Airdrop</span>
-                <span class="live-badge">LIVE</span>
-            </a>
-        </div>
-        <button class="mobile-cta">
-            <i class="ri-wallet-3-line"></i>
-            <span>Connect Wallet</span>
-        </button>
-    </div>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-        <!-- Animated Background -->
-        <div class="hero-bg">
-            <div class="floating-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-                <div class="shape shape-4"></div>
-            </div>
-            <div class="gradient-overlay"></div>
-        </div>
-
-        <!-- Hero Content -->
-        <div class="container">
-            <div class="hero-grid">
-                <!-- Left Column -->
-                <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
-                    <div class="badge-container">
-                        <span class="badge gradient-badge">
-                            <i class="ri-flashlight-fill"></i>
-                            POWERED BY SOLANA
-                        </span>
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Left Column - Profile & Tasks -->
+            <div class="left-column">
+                <!-- Profile Card -->
+                <div class="profile-card">
+                    <div class="profile-header">
+                        <div class="profile-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="profile-info">
+                            <h2>Welcome, Crypto Enthusiast!</h2>
+                            <p>Join the Autobrain AI Revolution</p>
+                        </div>
                     </div>
-                    
-                    <h1 class="hero-title">
-                        <span class="title-line">Decentralized</span>
-                        <span class="title-line highlight-text">AI Intelligence</span>
-                        <span class="title-line">On Blockchain</span>
-                    </h1>
-                    
-                    <p class="hero-subtitle">
-                        Autobrain Protocol revolutionizes artificial intelligence with Solana's high-speed blockchain. 
-                        Experience the future of decentralized AI computation.
-                    </p>
-                    
+
                     <!-- Stats -->
-                    <div class="hero-stats">
+                    <div class="stats-grid">
                         <div class="stat-card">
-                            <div class="stat-icon">
-                                <i class="ri-coin-line"></i>
-                            </div>
-                            <div class="stat-content">
-                                <h4 class="stat-value">$ABP</h4>
-                                <p class="stat-label">Token Symbol</p>
-                            </div>
+                            <h3 id="totalPoints">1,250</h3>
+                            <p>Total Points</p>
                         </div>
                         <div class="stat-card">
-                            <div class="stat-icon">
-                                <i class="ri-stack-line"></i>
-                            </div>
-                            <div class="stat-content">
-                                <h4 class="stat-value">10B</h4>
-                                <p class="stat-label">Total Supply</p>
-                            </div>
+                            <h3 id="rank">#42</h3>
+                            <p>Global Rank</p>
                         </div>
                         <div class="stat-card">
-                            <div class="stat-icon">
-                                <i class="ri-user-line"></i>
-                            </div>
-                            <div class="stat-content">
-                                <h4 class="stat-value">45%</h4>
-                                <p class="stat-label">Community</p>
-                            </div>
+                            <h3 id="referrals">8</h3>
+                            <p>Referrals</p>
                         </div>
+                        <div class="stat-card">
+                            <h3 id="tasksCompleted">12/18</h3>
+                            <p>Tasks Completed</p>
+                        </div>
+                    </div>
+
+                    <!-- Progress -->
+                    <div class="progress-section">
+                        <div class="progress-header">
+                            <span>Airdrop Progress</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tasks Section -->
+                <div class="tasks-section">
+                    <h3 class="section-title">
+                        <i class="fas fa-tasks"></i>
+                        Complete Tasks & Earn Points
+                    </h3>
+                    
+                    <div class="tasks-grid" id="tasksList">
+                        <!-- Tasks will be loaded here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Airdrop Info -->
+            <div class="sidebar">
+                <div class="airdrop-header">
+                    <h2>🎁 Autobrain Airdrop</h2>
+                    <p>Earn $ABP tokens by completing tasks</p>
+                </div>
+
+                <!-- Timer -->
+                <div class="airdrop-timer">
+                    <div class="timer-title">Airdrop ends in:</div>
+                    <div class="timer-display">
+                        <div class="time-unit">
+                            <span class="time-value" id="days">05</span>
+                            <span class="time-label">Days</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="time-value" id="hours">18</span>
+                            <span class="time-label">Hours</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="time-value" id="minutes">42</span>
+                            <span class="time-label">Minutes</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="time-value" id="seconds">30</span>
+                            <span class="time-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Total Rewards -->
+                <div class="total-rewards">
+                    <p>Your Estimated Rewards</p>
+                    <h3 id="estimatedRewards">2,450 $ABP</h3>
+                    <p>≈ $122.50 USD</p>
+                </div>
+
+                <!-- Claim Button -->
+                <button class="claim-btn" id="claimBtn">
+                    <i class="fas fa-gift"></i>
+                    Claim Your Rewards
+                </button>
+
+                <!-- Referral -->
+                <div class="referral-section">
+                    <h4>Invite Friends & Earn More</h4>
+                    <p>Share your referral link and earn 10% of your friends' points</p>
+                    
+                    <div class="referral-input">
+                        <input type="text" id="refLink" value="https://airdrop.autobrain.com/ref=abc123" readonly>
+                        <button onclick="copyRefLink()">
+                            <i class="fas fa-copy"></i>
+                        </button>
                     </div>
                     
-                    <!-- CTA Buttons -->
-                    <div class="hero-actions">
-                        <button class="btn-primary btn-lg btn-glow">
-                            <i class="ri-rocket-line"></i>
-                            <span>Buy $ABP</span>
-                        </button>
-                        <button class="btn-outline btn-lg">
-                            <i class="ri-file-list-3-line"></i>
-                            <span>Whitepaper</span>
-                        </button>
-                        <button class="btn-ghost btn-lg airdrop-btn">
-                            <i class="ri-gift-line"></i>
-                            <span>Claim Airdrop</span>
-                            <span class="pulse-dot"></span>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Right Column - 3D Brain -->
-                <div class="hero-visual" data-aos="fade-left" data-aos-delay="400">
-                    <div class="brain-container">
-                        <div class="brain-3d">
-                            <div class="brain-main">
-                                <div class="brain-part part-1"></div>
-                                <div class="brain-part part-2"></div>
-                                <div class="brain-part part-3"></div>
-                                <div class="brain-part part-4"></div>
-                            </div>
-                            <div class="brain-glow"></div>
+                    <div class="stats-grid" style="margin-top: 20px;">
+                        <div class="stat-card">
+                            <h3 id="refEarned">250</h3>
+                            <p>Points Earned</p>
                         </div>
-                        
-                        <!-- Floating Elements -->
-                        <div class="floating-element el-1">
-                            <i class="ri-shield-check-line"></i>
-                            <span>Secure</span>
-                        </div>
-                        <div class="floating-element el-2">
-                            <i class="ri-zap-line"></i>
-                            <span>Fast</span>
-                        </div>
-                        <div class="floating-element el-3">
-                            <i class="ri-line-chart-line"></i>
-                            <span>Scalable</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Partners Scroll -->
-            <div class="partners-scroll" data-aos="fade-up" data-aos-delay="600">
-                <div class="scroll-track">
-                    <div class="scroll-item">
-                        <div class="partner-logo solana-logo">
-                            <i class="ri-solana-fill"></i>
-                            <span>Solana</span>
-                        </div>
-                    </div>
-                    <div class="scroll-item">
-                        <div class="partner-logo bnb-logo">
-                            <i class="ri-currency-fill"></i>
-                            <span>Binance</span>
-                        </div>
-                    </div>
-                    <div class="scroll-item">
-                        <div class="partner-logo partner-3">
-                            <i class="ri-artificial-intelligence-fill"></i>
-                            <span>OpenAI</span>
-                        </div>
-                    </div>
-                    <div class="scroll-item">
-                        <div class="partner-logo partner-4">
-                            <i class="ri-cloud-line"></i>
-                            <span>Cloudflare</span>
+                        <div class="stat-card">
+                            <h3 id="totalRefs">8</h3>
+                            <p>Friends Joined</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="section about-section">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">
-                    <span class="title-number">01</span>
-                    About Protocol
-                </h2>
-                <p class="section-subtitle">
-                    Revolutionizing AI with blockchain technology
-                </p>
-            </div>
-
-            <div class="about-grid">
-                <!-- About Card 1 -->
-                <div class="about-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="about-card-header">
-                        <div class="card-icon">
-                            <i class="ri-cpu-line"></i>
-                        </div>
-                        <h3 class="card-title">AI Computation</h3>
-                    </div>
-                    <p class="card-description">
-                        Decentralized AI model training and inference on Solana blockchain. 
-                        Distributed computing power for complex AI tasks.
-                    </p>
-                    <div class="card-stats">
-                        <div class="stat">
-                            <span class="stat-number">50K+</span>
-                            <span class="stat-label">AI Models</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">99.9%</span>
-                            <span class="stat-label">Uptime</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- About Card 2 -->
-                <div class="about-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="about-card-header">
-                        <div class="card-icon">
-                            <i class="ri-link-m"></i>
-                        </div>
-                        <h3 class="card-title">Blockchain Integration</h3>
-                    </div>
-                    <p class="card-description">
-                        Built on Solana for high-speed, low-cost transactions. 
-                        Smart contracts for transparent AI governance.
-                    </p>
-                    <div class="card-stats">
-                        <div class="stat">
-                            <span class="stat-number">65K</span>
-                            <span class="stat-label">TPS</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">$0.00025</span>
-                            <span class="stat-label">Avg. Fee</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- About Card 3 -->
-                <div class="about-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="about-card-header">
-                        <div class="card-icon">
-                            <i class="ri-community-line"></i>
-                        </div>
-                        <h3 class="card-title">Community Driven</h3>
-                    </div>
-                    <p class="card-description">
-                        45% token allocation to community. 
-                        DAO governance for protocol upgrades and decisions.
-                    </p>
-                    <div class="card-stats">
-                        <div class="stat">
-                            <span class="stat-number">45%</span>
-                            <span class="stat-label">Community</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">10K+</span>
-                            <span class="stat-label">Members</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- Footer -->
+        <div class="footer">
+            <p>© 2024 Autobrain Protocol. All rights reserved.</p>
+            <p>Token: $ABP | Total Supply: 10B | Community: 45%</p>
         </div>
-    </section>
+    </div>
 
-    <!-- Tokenomics Section -->
-    <section id="tokenomics" class="section tokenomics-section">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">
-                    <span class="title-number">02</span>
-                    Tokenomics
-                </h2>
-                <p class="section-subtitle">
-                    $ABP Token Distribution & Economics
-                </p>
-            </div>
-
-            <div class="tokenomics-grid">
-                <!-- Token Stats -->
-                <div class="token-stats" data-aos="fade-right">
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <div class="stat-icon">
-                                <i class="ri-token-swap-line"></i>
-                            </div>
-                            <div class="stat-info">
-                                <h4 class="stat-title">Token Name</h4>
-                                <p class="stat-value">$ABP</p>
-                            </div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-icon">
-                                <i class="ri-link"></i>
-                            </div>
-                            <div class="stat-info">
-                                <h4 class="stat-title">Blockchain</h4>
-                                <p class="stat-value">Solana</p>
-                            </div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-icon">
-                                <i class="ri-stack-line"></i>
-                            </div>
-                            <div class="stat-info">
-                                <h4 class="stat-title">Total Supply</h4>
-                                <p class="stat-value">10,000,000,000</p>
-                            </div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-icon">
-                                <i class="ri-community-line"></i>
-                            </div>
-                            <div class="stat-info">
-                                <h4 class="stat-title">Community</h4>
-                                <p class="stat-value">4.5B Tokens (45%)</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Live Price -->
-                    <div class="live-price-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="price-header">
-                            <h4>Live Price</h4>
-                            <span class="price-change positive">+5.2%</span>
-                        </div>
-                        <div class="price-content">
-                            <h3 class="current-price">$0.0425</h3>
-                            <div class="price-chart">
-                                <canvas id="miniCha
+    <script>
+        // Background Particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+     
